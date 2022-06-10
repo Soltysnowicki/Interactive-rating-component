@@ -7,11 +7,143 @@
   --very-dark-blue: hsl(216, 12%, 8%);
 }
 body {
+  font-size: 15px;
+  font-family: "Overpass", sans-serif;
+  background-color: black;
 }
+.card-1 {
+  height: 416px;
+  width: 412px;
+  margin: 0 auto;
+  margin-top: 195px;
+  background: radial-gradient(
+    98.96% 98.96% at 50% 0%,
+    #232a34 0%,
+    #181e27 100%
+  );
+  border-radius: 30px;
+}
+.card-1 img {
+  position: relative;
+  top: 7.6%;
+  left: 7.7%;
+  border-radius: 100%;
+  padding: 12px;
+  background-color: var(--dark-blue);
+}
+h1 {
+  color: var(--white);
+  margin-top: 60px;
+  margin-left: 32px;
+}
+.request {
+  color: var(--medium-grey);
+  margin-left: 32px;
+}
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 341px;
+}
+li {
+  position: relative;
+  color: var(--medium-grey);
+  width: 51px;
+  height: 51px;
+  border-radius: 50%;
+  background-color: var(--dark-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 10px;
+}
+li:hover {
+  background-color: var(--orange);
+  color: var(--white);
+  cursor: pointer;
+}
+.active {
+  background-color: var(--medium-grey);
+  color: var(--white);
+}
+#submit {
+  margin-top: 32px;
+  margin-left: 40px;
+  width: 341px;
+  height: 45px;
+  background-color: var(--orange);
+  border-radius: 22.5px;
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  border: none;
+}
+#submit:hover {
+  background-color: white;
+  color: var(--orange);
+  cursor: pointer;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+.card-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 416px;
+  width: 412px;
+  margin: 0 auto;
+  margin-top: 195px;
+  background: radial-gradient(
+    98.96% 98.96% at 50% 0%,
+    #232a34 0%,
+    #181e27 100%
+  );
+  border-radius: 30px;
+}
+
+.card-2 img {
+  height: 108px;
+  width: 162px;
+}
+.selection {
+  margin-top: 32px;
+  width: 193px;
+  height: 32px;
+  font-size: 14px;
+  color: var(--orange);
+  background-color: var(--dark-blue);
+  text-align: center;
+  border-radius: 22.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chosen-rating {
+  padding: 0.2rem;
+}
+.thank {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--white);
+}
+.greet {
+  width: 340px;
+  text-align: center;
+  color: var(--light-grey);
+}
+
+.hide {
+  display: none;
 }
