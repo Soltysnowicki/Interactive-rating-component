@@ -1,3 +1,4 @@
+/* color variables */
 :root {
   --orange: #fb7413;
   --white: hsl(0, 0%, 100%);
@@ -6,6 +7,7 @@
   --dark-blue: hsl(213, 19%, 18%);
   --very-dark-blue: hsl(216, 12%, 8%);
 }
+
 body {
   font-size: 15px;
   font-family: "Overpass", sans-serif;
@@ -64,6 +66,7 @@ li:hover {
   background-color: var(--orange);
   color: var(--white);
   cursor: pointer;
+  transition: 300ms;
 }
 .active {
   background-color: var(--medium-grey);
@@ -86,14 +89,7 @@ li:hover {
   background-color: white;
   color: var(--orange);
   cursor: pointer;
-}
-
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
+  transition: 300ms;
 }
 
 .card-2 {
@@ -146,4 +142,18 @@ li:hover {
 
 .hide {
   display: none;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: var(--light-grey);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+  color: var(--white);
+}
+.attribution a:hover {
+  color: var(--orange);
+  transition: 300ms;
 }
