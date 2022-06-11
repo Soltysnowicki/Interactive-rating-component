@@ -7,12 +7,18 @@
   --dark-blue: hsl(213, 19%, 18%);
   --very-dark-blue: hsl(216, 12%, 8%);
 }
-
+/* HTML margin & padding reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+/*document font and background formatting*/
 body {
   font-size: 15px;
   font-family: "Overpass", sans-serif;
   background-color: black;
 }
+/*Submit card formatting*/
 .card-1 {
   height: 416px;
   width: 412px;
@@ -41,7 +47,10 @@ h1 {
 .request {
   color: var(--medium-grey);
   margin-left: 32px;
+  width: 340px;
+  margin-top: 7px;
 }
+/*number selector formatting*/
 ul {
   list-style: none;
   display: flex;
@@ -49,6 +58,8 @@ ul {
   align-items: center;
   justify-content: space-between;
   width: 341px;
+  margin: 0 auto;
+  margin-top: 24px;
 }
 li {
   position: relative;
@@ -72,8 +83,9 @@ li:hover {
   background-color: var(--medium-grey);
   color: var(--white);
 }
+/*submit button formatting*/
 #submit {
-  margin-top: 32px;
+  margin-top: 50px;
   margin-left: 40px;
   width: 341px;
   height: 45px;
@@ -92,6 +104,7 @@ li:hover {
   transition: 300ms;
 }
 
+/*greeting card formatting*/
 .card-2 {
   display: flex;
   flex-direction: column;
@@ -108,7 +121,6 @@ li:hover {
   );
   border-radius: 30px;
 }
-
 .card-2 img {
   height: 108px;
   width: 162px;
@@ -133,16 +145,19 @@ li:hover {
   font-size: 28px;
   font-weight: 700;
   color: var(--white);
+  margin-top: 32px;
 }
 .greet {
   width: 340px;
   text-align: center;
   color: var(--light-grey);
+  margin-top: 15px;
 }
-
+/*card hiding*/
 .hide {
   display: none;
 }
+/*footer formatting*/
 footer {
   font-size: 11px;
   text-align: center;
@@ -156,4 +171,53 @@ footer a {
 footer a:hover {
   color: var(--orange);
   transition: 300ms;
+}
+
+/*mobile device breakpoint*/
+@media only screen and (max-width: 800px) {
+  .card-1 {
+    height: 380px;
+    width: 340px;
+    margin-top: 80px;
+  }
+  .card-1 img {
+    position: relative;
+    top: 7.6%;
+    left: 7.7%;
+    border-radius: 100%;
+    padding: 12px;
+    background-color: var(--dark-blue);
+  }
+  h1 {
+    color: var(--white);
+    margin-top: 40px;
+    margin-left: 32px;
+  }
+  .request {
+    color: var(--medium-grey);
+    margin-left: 32px;
+    width: 279px;
+  }
+  ul {
+    width: 281px;
+  }
+  li {
+    width: 42px;
+    height: 42px;
+  }
+  #submit {
+    margin-top: 35px;
+    margin-left: 30px;
+    width: 279px;
+  }
+
+  .card-2 {
+    height: 380px;
+    width: 340px;
+    margin-top: 80px;
+  }
+
+  .greet {
+    width: 279px;
+  }
 }
